@@ -6,7 +6,13 @@ import Pics from "./components/Pics";
 
 function App() {
   return (
-  
+    <BrowserRouter>
+      <div>
+        <Route component={Home} path="/" exact />
+        <Route component={Pics} path="/" Pics />
+       </div>
+      </BrowserRouter>
+
   );
 }
 
